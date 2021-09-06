@@ -20,4 +20,6 @@ func (a *App) initRoutes() {
 	a.Router.HandleFunc("/", a.IndexHandler()).Methods("GET")
 	a.Router.HandleFunc("/blockSwaps", a.swapsHandler()).Methods("GET")
 	a.Router.HandleFunc("/assetPools", a.assetPoolsHandler()).Methods("GET")
+	a.Router.HandleFunc("/assetVolume", a.assetVolumeHandler()).Methods("GET")
+	a.Router.HandleFunc("/allAssetsSwapped", a.allAssetsSwapped()).Methods("GET")
 }
