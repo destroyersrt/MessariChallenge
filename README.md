@@ -22,3 +22,4 @@ There are four endpoints available for each request mentioned above:
     - /blockSwaps -- This endpoint expects block number and returns all the transactionId of all the swaps happened in that particular block 
     - /allAssetsSwapped --  This endpoint expects block number and returns the name of the tokens that were swapped in that particular block
 
+NOTE: I have added .env file on purpose, so that it is easier to query Uniswap subgraph
