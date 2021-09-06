@@ -14,7 +14,7 @@ Given an asset ID:<br>
     <br>
     - What is the total volume of that asset swapped in a given time range?
     <br>
-BONUS! Given a block number:
+BONUS! Given a block number:<br>
     - What swaps occurred during that specific block?
     <br>
     - List all assets swapped during that specific block
