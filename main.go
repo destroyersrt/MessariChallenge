@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"messarichallenge/app"
 	"net/http"
@@ -19,6 +20,8 @@ func main() {
 	app := app.New()
 
 	http.HandleFunc("/", app.Router.ServeHTTP)
+
+	fmt.Println("Server startig at  3000")
 
 	err := http.ListenAndServe(":3000", nil)
 	check(err)

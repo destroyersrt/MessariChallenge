@@ -17,3 +17,12 @@ type AssetVolumeRequest struct {
 type BlockRequest struct {
 	Block uint32 `json:"block"`
 }
+
+type Token struct {
+	Name string `json:"name"`
+}
+
+type AssetsSwapped struct {
+	Token0 Token `json:"token0"`
+	Token1 Token `json:"token1"`
+}

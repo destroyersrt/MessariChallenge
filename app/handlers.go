@@ -33,7 +33,6 @@ func (a *App) assetPoolsHandler() http.HandlerFunc {
 			return
 		}
 
-		fmt.Println("asset ID: ", assetID)
 		x := fmt.Sprintf(`{
 		tokens(where: {
 		  id: "%s"
@@ -80,7 +79,6 @@ func (a *App) assetVolumeHandler() http.HandlerFunc {
 			return
 		}
 
-		fmt.Println("asset ID: ", assetID)
 		x := fmt.Sprintf(`{
 			tokens (where:{
 			  id: "%s"
@@ -134,7 +132,6 @@ func (a *App) swapsHandler() http.HandlerFunc {
 			return
 		}
 
-		fmt.Println("block Number: ", blockNum.Block)
 		x := fmt.Sprintf(`{
 		swaps(block: {number: %d}){
 		  transaction{
@@ -172,7 +169,6 @@ func (a *App) allAssetsSwapped() http.HandlerFunc {
 			return
 		}
 
-		fmt.Println("block Number: ", blockNum.Block)
 		x := fmt.Sprintf(`{
 		swaps(block: {number: %d}){
 			token0 {
